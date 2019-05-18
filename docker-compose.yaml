@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+    dog-walker-front:
+        build:
+            context: .
+        restart: unless-stopped
+        container_name: dog_walker_front
+        ports:
+        - "7777:7777"
+        volumes:
+        - "/var/run/docker.sock:/var/run/docker.sock"
+        tty: true
+
+networks:
+    default:
+        external:
+            name: dev
