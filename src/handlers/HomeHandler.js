@@ -16,7 +16,7 @@ class HomeHandler extends Component {
     }
 
     handleClick() {
-        axios.get('http://localhost:8085/dog/fake-dog-uuid', {
+        axios.get('http://localhost:8080/dog/fake-dog-uuid', {
             responseType: 'json'
         }).then(response => {
             this.setState({data: response.data.data});

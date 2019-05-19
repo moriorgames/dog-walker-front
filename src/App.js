@@ -11,7 +11,7 @@ class BasicExample extends Component {
                 <div>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="http://localhost:8080/">Home</Link>
                         </li>
                         <li>
                             <Link to="/click_me">ClickMe</Link>
